@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Vogue';
+  src: url('Vogue.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Annamellia';
+  src: url('Annamellia.ttf')  format('truetype'),
+}
+
+.Title{
+    font-family: 'Vogue', Fallback, sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.heading-body{
+  font-family: 'Annamellia', Fallback, sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.images-grid img{
+  height: 400px;
+  width: 400px;
+  border: solid white 20px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  /* display:inline;
+  flex-direction: row;
+  text-align: center;
+  object-fit: cover; */
+}
+
+.images-grid{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    padding: 20px 0;
+
+  }
+
+@media screen and (max-width: 1024px)
+
+  {  .images-grid img{
+      height: 600px;
+      width: 600px;
+      border: solid white 20px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .images-grid{
+        display: grid;
+        justify-content: center;
+        grid-gap: 10px;
+        background-color: white;
+        padding: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 680px;
+        padding-left: 20%;
+  }
+  .Title{
+      font-family: 'Vogue', Fallback, sans-serif;
+      font-size: 100px;
+      text-align: center;
+  }
+
+  .heading-body{
+    font-family: 'Annamellia', Fallback, sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+
+
+ /* @@media screen and (max-width: 983px) {
+   .image img{
+    display: flex;
+   flex-direction: column;
+  }} */
